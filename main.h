@@ -131,7 +131,6 @@ void *_realloc(void *p, unsigned int o_size, unsigned int n_size);
 void _memcpy(void *n_p, const void *p, unsigned int size);
 char *_strcpy(char *dest, char *src);
 char *strcat_cd(data_shell *datash, char *masg, char *err, char *ver_str);
-/*char *strcat_cd(data_shell *, char *, char *, char *);*/
 
 int _strcmp(char *s1, char *s2);
 void rev_string(char *str);
@@ -151,8 +150,7 @@ int cmd_exec(data_shell *datash);
 int check_err_cmd(char *dir, data_shell *datash);
 int is_executable(data_shell *datash);
 
-
-/*int cmp_env_name(const char *nenv, const char *name);*/
+int cmp_env_name(const char *nenv, const char *name);
 int _env(data_shell *datash);
 char *_getenv(const char *name, char **_environ);
 
