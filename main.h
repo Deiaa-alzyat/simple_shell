@@ -185,9 +185,4 @@ void add_nodes(sep_list **head_s, line_list **head_l, char *input);
 int split_commands(data_shell *datash, char *input);
 char **split_line(char *input);
 
-char *error_126(char **args);
-char *error_127(char **args);
-int proc_file_commands(char *file_path, int *exe_ret);
-int cant_open(char *file_path);
-
 #endif
